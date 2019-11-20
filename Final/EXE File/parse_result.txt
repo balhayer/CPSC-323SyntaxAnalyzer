@@ -1,0 +1,91 @@
+-Token: identifier	-Lexeme: x
+	<Statement> -> <Expression-statement> | <Assign> | <If> | <Declare> | <While>
+	<Assign> -> identifier = <Expression>;
+-Token: operator	-Lexeme: =
+-Token: identifier	-Lexeme: a
+	<Expression> -> <Term> <ExpressionPrime>
+	<Term> -> <Factor> <TermPrime>
+	<Factor> -> - <Primary> | <Primary>
+	<Primary> -> identifier | int | ( <Expression> ) | real | true | false
+-Token: operator	-Lexeme: +
+	<TermPrime> -> * <Factor> <TermPrime> | / <Factor> <TermPrime> | <Empty>
+	<Empty> -> epsilon
+	<ExpressionPrime> -> + <Term> <ExpressionPrime> | - <Term> <ExpressionPrime> | <Empty>
+-Token: identifier	-Lexeme: b
+	<Term> -> <Factor> <TermPrime>
+	<Factor> -> - <Primary> | <Primary>
+	<Primary> -> identifier | int | ( <Expression> ) | real | true | false
+-Token: separator	-Lexeme: ;
+	<TermPrime> -> * <Factor> <TermPrime> | / <Factor> <TermPrime> | <Empty>
+	<Empty> -> epsilon
+	<ExpressionPrime> -> + <Term> <ExpressionPrime> | - <Term> <ExpressionPrime> | <Empty>
+	<Empty> -> epsilon
+
+-Token: identifier	-Lexeme: z
+	<Statement> -> <Expression-statement> | <Assign> | <If> | <Declare> | <While>
+	<Assign> -> identifier = <Expression>;
+-Token: operator	-Lexeme: =
+-Token: identifier	-Lexeme: c
+	<Expression> -> <Term> <ExpressionPrime>
+	<Term> -> <Factor> <TermPrime>
+	<Factor> -> - <Primary> | <Primary>
+	<Primary> -> identifier | int | ( <Expression> ) | real | true | false
+-Token: operator	-Lexeme: +
+	<TermPrime> -> * <Factor> <TermPrime> | / <Factor> <TermPrime> | <Empty>
+	<Empty> -> epsilon
+	<ExpressionPrime> -> + <Term> <ExpressionPrime> | - <Term> <ExpressionPrime> | <Empty>
+-Token: identifier	-Lexeme: d
+	<Term> -> <Factor> <TermPrime>
+	<Factor> -> - <Primary> | <Primary>
+	<Primary> -> identifier | int | ( <Expression> ) | real | true | false
+-Token: separator	-Lexeme: ;
+	<TermPrime> -> * <Factor> <TermPrime> | / <Factor> <TermPrime> | <Empty>
+	<Empty> -> epsilon
+	<ExpressionPrime> -> + <Term> <ExpressionPrime> | - <Term> <ExpressionPrime> | <Empty>
+	<Empty> -> epsilon
+
+-Token: identifier	-Lexeme: a
+	<Statement> -> <Expression-statement> | <Assign> | <If> | <Declare> | <While>
+	<Assign> -> identifier = <Expression>;
+-Token: operator	-Lexeme: =
+-Token: identifier	-Lexeme: e
+	<Expression> -> <Term> <ExpressionPrime>
+	<Term> -> <Factor> <TermPrime>
+	<Factor> -> - <Primary> | <Primary>
+	<Primary> -> identifier | int | ( <Expression> ) | real | true | false
+-Token: operator	-Lexeme: -
+	<TermPrime> -> * <Factor> <TermPrime> | / <Factor> <TermPrime> | <Empty>
+	<Empty> -> epsilon
+	<ExpressionPrime> -> + <Term> <ExpressionPrime> | - <Term> <ExpressionPrime> | <Empty>
+-Token: identifier	-Lexeme: f
+	<Term> -> <Factor> <TermPrime>
+	<Factor> -> - <Primary> | <Primary>
+	<Primary> -> identifier | int | ( <Expression> ) | real | true | false
+-Token: separator	-Lexeme: ;
+	<TermPrime> -> * <Factor> <TermPrime> | / <Factor> <TermPrime> | <Empty>
+	<Empty> -> epsilon
+	<ExpressionPrime> -> + <Term> <ExpressionPrime> | - <Term> <ExpressionPrime> | <Empty>
+	<Empty> -> epsilon
+
+-Token: identifier	-Lexeme: b
+	<Statement> -> <Expression-statement> | <Assign> | <If> | <Declare> | <While>
+	<Assign> -> identifier = <Expression>;
+-Token: operator	-Lexeme: =
+-Token: identifier	-Lexeme: g
+	<Expression> -> <Term> <ExpressionPrime>
+	<Term> -> <Factor> <TermPrime>
+	<Factor> -> - <Primary> | <Primary>
+	<Primary> -> identifier | int | ( <Expression> ) | real | true | false
+-Token: operator	-Lexeme: *
+	<TermPrime> -> * <Factor> <TermPrime> | / <Factor> <TermPrime> | <Empty>
+-Token: identifier	-Lexeme: n
+	<Factor> -> - <Primary> | <Primary>
+	<Primary> -> identifier | int | ( <Expression> ) | real | true | false
+-Token: separator	-Lexeme: ;
+	<TermPrime> -> * <Factor> <TermPrime> | / <Factor> <TermPrime> | <Empty>
+	<Empty> -> epsilon
+	<ExpressionPrime> -> + <Term> <ExpressionPrime> | - <Term> <ExpressionPrime> | <Empty>
+	<Empty> -> epsilon
+
+
+Finished.

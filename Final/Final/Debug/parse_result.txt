@@ -1,0 +1,30 @@
+-Token: keyword	-Lexeme: if
+	<Statement> -> <Expression-statement> | <Assign> | <If> | <Declare> | <While>
+	<If> -> if <Conditional> then <StatementBlock> <ElseBlock> endif
+-Token: identifier	-Lexeme: a
+	<Conditional> -> <Expression> <ConditionalPrime>
+	<Expression> -> <Term> <ExpressionPrime>
+	<Term> -> <Factor> <TermPrime>
+	<Factor> -> - <Primary> | <Primary>
+	<Primary> -> identifier | int | ( <Expression> ) | real | true | false
+-Token: operator	-Lexeme: +
+	<TermPrime> -> * <Factor> <TermPrime> | / <Factor> <TermPrime> | <Empty>
+	<Empty> -> epsilon
+	<ExpressionPrime> -> + <Term> <ExpressionPrime> | - <Term> <ExpressionPrime> | <Empty>
+-Token: identifier	-Lexeme: b
+	<Term> -> <Factor> <TermPrime>
+	<Factor> -> - <Primary> | <Primary>
+	<Primary> -> identifier | int | ( <Expression> ) | real | true | false
+-Token: keyword	-Lexeme: then
+	<TermPrime> -> * <Factor> <TermPrime> | / <Factor> <TermPrime> | <Empty>
+	<Empty> -> epsilon
+	<ExpressionPrime> -> + <Term> <ExpressionPrime> | - <Term> <ExpressionPrime> | <Empty>
+	<Empty> -> epsilon
+	<ConditionalPrime> -> <Relop> <Expression> | <Empty>
+	<Relop> -> < | <= | == | <> | >= | >
+Error: invalid relational operator - line 1
+	<Empty> -> epsilon
+-Token: identifier	-Lexeme: a
+	<StatementBlock> -> { <Statement> <moreStatement>
+Error: invalid { statement block } - line 1
+Error: invalid If block - line 1
